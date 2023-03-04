@@ -1,7 +1,12 @@
 <script setup lang="ts">
 import { ref } from 'vue';
 
-const items = ref<object[]>([
+interface Item {
+  title: string,
+  description: string,
+}
+
+const items = ref<Item[]>([
   {
     title: 'Item 1',
     description: 'Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.'
